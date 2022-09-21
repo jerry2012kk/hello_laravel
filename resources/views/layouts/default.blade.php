@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>@yield('title', 'Weibo App') - Laravel 入门教程</title>
-    <link rel="stylesheet" href="/css/app.css">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-      <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}" defer></script>
+    <meta charset="utf-8">
+    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">19
 
-<!-- Styles -->
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
   </head>
   <body>
 
