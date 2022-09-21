@@ -22,3 +22,11 @@ Route::get('/', function () {
 
 Route::resource('users', 'App\Http\Controllers\UsersController');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
